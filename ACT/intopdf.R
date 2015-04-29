@@ -1,0 +1,6 @@
+args<-commandArgs(TRUE)
+a=paste(args[1],".pdf",sep="")
+pdf(file=a)
+Data=read.table(args[1], header=T, skip=2, sep="\t")
+plot(Data$Bin,Data$mean)
+dev.off()
