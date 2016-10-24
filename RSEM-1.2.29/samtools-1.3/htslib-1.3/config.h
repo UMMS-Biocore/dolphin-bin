@@ -25,4 +25,4 @@
 /* #undef HAVE_LIBCURL */
 
 /* Define to 1 if you have a working `mmap' system call. */
-#define HAVE_MMAP 1
+/* #undef HAVE_MMAP */
