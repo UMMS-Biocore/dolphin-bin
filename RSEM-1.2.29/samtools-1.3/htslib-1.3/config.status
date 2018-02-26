@@ -434,7 +434,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/mac/dolphin-bin/RSEM-1.2.29/samtools-1.3/htslib-1.3'
+ac_pwd='/usr/local/bin/dolphin-bin/RSEM-1.2.29/samtools-1.3/htslib-1.3'
 srcdir='.'
 test -n "$AWK" || AWK=awk
 # The default lists apply if the user does not specify any file.
@@ -720,6 +720,7 @@ D["HAVE_STDLIB_H"]=" 1"
 D["HAVE_UNISTD_H"]=" 1"
 D["HAVE_SYS_PARAM_H"]=" 1"
 D["HAVE_GETPAGESIZE"]=" 1"
+D["HAVE_MMAP"]=" 1"
 D["HAVE_GMTIME_R"]=" 1"
 D["HAVE_LIBZ"]=" 1"
   for (key in D) D_is_set[key] = 1
