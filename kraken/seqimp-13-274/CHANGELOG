@@ -1,0 +1,54 @@
+12-109:
+170412: Altered paired-end length distribution plot axis to clearly delineate read lengths
+170412: Added read counts and percentages of processed reads to Bowtie mapping bar graph for small RNA analysis
+180412: Added processed read counts to small RNA filter plots
+180412: Added lane title to all QC plots
+180412: Resized Bowtie plot axes
+
+12-110:
+190412: Reformatted manual
+190412: Incorporate maximum base quality for tally FASTQ output for paired end sequencing
+
+12-118:
+200412: Allow specification of --no-unique which will not stop the pipeline from appending the process ID to the analysis directory name
+270412: Fixed bug in filtering that caused pipeline to crash while checking processed read totals
+270412: Fixed bug in presenting total accepted in filter stage of small RNA analysis
+
+12-354:
+060912: runmefirst.sh '--system-check' option corrected
+061212: Added repeat name to the title of repeat analysis plots
+061212: Clarify thread reporting to standard output and error in imp_commandline.pl print statements.
+071212: Tweaked alignment QC plots to be more intuitive.
+
+13-002:
+020113: Updated default_config files for compatibility with the latest Annotation versions.
+
+13-008:
+080113: Edited reaper configuration file for 5' sequence insert for new Reaper parameters.
+
+13-009:
+090113: Edited reaper configuration file for paired end, no barcode parameters to remove default head to tail trimming in this case where adapters aren't expected.
+
+13-028:
+230113: Corrected typos.
+280113: Manual updates.
+
+13-095:
+310113: Continued work on improving feedback provided by the pipeline.
+210213: Improved documentation.
+210213: More typos.
+040413: Change headers to miRNA expression table - to be more intuitive.
+040413: Introduced large changes to the way that miRNA counts are handled. These include:
+            The option to consider each miRNA locus individually as well as merge them based on miRNA ID.
+            The option to distribute multi-mapping reads between miRNA loci by a method that considers the distribution
+               of uniquely mapping reads. This method no longer considers alignments not associated with miRNA annotation.
+            Different methods to handle overlapping miRNA annotations from miRBase.
+040413: Update to all Default Configuration files to reflect the new options available for handling miRNA expression matrices.
+050413: Further improved documentation to explain new methods for handling miRNA expression counts in more detail.
+050413: Added references to manual and --system-check option.
+
+13-274:
+250713: Added checks to return helpful error messages.
+090913: Identified a problem with an R package inconsistently parsing command line flags between versions.
+        Altered pipeline to ensure consistent behaviour with all R versions.
+130913: Pipeline quits with non-zero exit code when threads fail.
